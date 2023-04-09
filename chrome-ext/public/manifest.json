@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Open and Screenshot",
+  "description": "Chrome Extension to open multiple tabs and screenshot the pages for QA teams",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open"
+  },
+  "permissions": [
+    "scripting"
+  ]
+}
