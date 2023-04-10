@@ -5,3 +5,7 @@ body {
 .App {
   padding: 8px 5px;
 }
+
+.errorMsg {
+  color: red;
+}
