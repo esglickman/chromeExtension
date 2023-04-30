@@ -9,6 +9,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'], // Add '.tsx' to the list of extensions
+  },
   mode: 'development',
   devtool: 'inline-source-map',
   module: {
@@ -25,6 +28,11 @@ module.exports = {
             ],
           }
         }
+      },
+      {
+        test: /\.tsx?$/, // Update the test regex to include '.tsx' files
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/i,
